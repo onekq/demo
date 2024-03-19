@@ -14,7 +14,7 @@ http {
         listen $PORT;
         server_name localhost;
 
-        root <%= ENV['APP_DIR'] %>;
+        root $HOME;
         index index.html;
 
         location / {
