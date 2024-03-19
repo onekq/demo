@@ -11,10 +11,10 @@ http {
     keepalive_timeout 65;
 
     server {
-        listen ${PORT};
+        listen <%= ENV["PORT"] %>;
         server_name localhost;
 
-        root ${HOME};
+        root <%= ENV["HOME"] %>;
         index index.html;
 
         location / {
